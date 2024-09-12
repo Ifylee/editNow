@@ -18,10 +18,10 @@ export const putDb = async (content) => {
   const jateDB = await openDB('jate', 1);
   const tx = jateDB.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
-  const request = store.put({id: 1, value: content});
+  const request = store.put({ value: content});
   const result = await request;
 
-  console.log(`- data saved to the database`, result.value);
+  console.log(`- data saved to the database with ID`, result);
 
 };
 
@@ -32,13 +32,14 @@ export const getDb = async () => {
   const jateDB = await openDB('jate', 1);
   const tx = jateDB.transaction('jate', 'readonly');
   const store = tx.objectStore('jate');
-  const request = store.get(1);
+  const request = store.getAll();
   const result = await request;
 
-  result ? console.log(`- data retrieved from the db`, result.value) : 
-  console.log(`- no data found in the db`);    
+  result.length > 0
+  ? console.log(`- data retrieved from the db`, result) 
+  : console.log(`- no data found in the db`);    
 
-  return result?.value;
+  return result;
 };
 
 initdb();
