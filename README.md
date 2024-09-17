@@ -67,4 +67,5 @@ For more questions, please open an issue on my github: [ifylee](https://github.c
 
 This application is deployed on render, under the link below:
 
-This README provides a comprehensive guide to your project while outlining its key technologies, installation steps, and usage instructions. 
+
+This README gives a clear guide for any project, including the main technologies used, how to install it, and how to use it.
