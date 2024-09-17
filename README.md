@@ -24,27 +24,24 @@ This project is a browser-based text editor built as a single-page application (
 - Service Workers: Tools that allow the app to work offline and store important files.
 - PWAs: Makes sure the app follows Progressive Web App rules, so it can be installed and used without an internet connection..
 
-## Installation
-
-Follow these steps to get started:
-
+## Installation:
 Clone the repository:
-git clone 
+git clone https://github.com/Ifylee/editNow
 
-## Install dependencies:
+**Install dependencies:**
 To install dependencies:
 ```
 Run npm install
 
 ```
 
-## Run the app in development mode: 
+**Run the app in development mode:** 
 ```
 npm run start
 
 ```
 
-## Build for production: 
+**Build for production:** 
 ```
 npm run build
 
