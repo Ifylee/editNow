@@ -8,24 +8,31 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 
 module.exports = () => {
   return {
+
     mode: 'development',
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
+
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
+      publicPath: '/',
+
     },
+
     plugins: [
       new HtmlWebpackPlugin({
-        template: './index.html',
+        template: './src/index.html',
         title: "J.A.T.E"
      }),
+
      new InjectManifest({
-        swSrc: './src-sw.js',
-        swDest: 'src-sw.js'
+        swSrc: './src/sw.js',
+        swDest: 'sw.js',
       }),
+
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
@@ -52,6 +59,7 @@ module.exports = () => {
           test: /\.css$/,
           use: ['style-loader', 'css-loader']
         },
+        
         {
           test: /\.m?.js$/,
           exclude: /node_modules/,
