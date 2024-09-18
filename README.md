@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a browser-based text editor built as a single-page application (SPA) that meets all the Progressive Web App (PWA) standards. It can be used offline and uses multiple methods to save data, ensuring it works even if a browser doesn’t support one of the options.  The main way it stores data is through IndexedDB, simplified with the idb package.
+EditNow is a browser-based text editor built as a single-page application (SPA) that meets all the Progressive Web App (PWA) standards. It can be used offline and uses multiple methods to save data, ensuring it works even if a browser doesn’t support one of the options.  The main way it stores data is through IndexedDB, simplified with the idb package.
 
 ## Key Features
 
