@@ -37,7 +37,7 @@ Run npm install
 
 **Run the app in development mode:** 
 ```
-npm run start
+npm run start:dev
 
 ```
 
