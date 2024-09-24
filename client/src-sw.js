@@ -27,7 +27,7 @@ warmStrategyCache({
 
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
-// TODO: Implement asset caching
+//Implement asset caching
 // Cache JS, CSS, and other assets with CacheFirst strategy
 const assetCache = new CacheFirst({
   cacheName: 'asset-cache',
