@@ -69,3 +69,9 @@ This application is deployed on render, under the link below:
 
 
 This README gives a clear guide for any project, including the main technologies used, how to install it, and how to use it.
+
+**Here's the link to this application deployed on render:** https://editnow.onrender.com
+
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
